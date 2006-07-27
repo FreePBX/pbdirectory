@@ -14,20 +14,22 @@ function pbdirectory_get_config($engine) {
         // This generates the dialplan
         global $ext;
         switch($engine) {
-			case "asterisk":
-				$fcc = new featurecode('pbdirectory', 'app-pbdirectory');
-				$code = $fcc->getCodeActive();
-				unset($fcc);
+		case "asterisk":
+			$fcc = new featurecode('pbdirectory', 'app-pbdirectory');
+			$code = $fcc->getCodeActive();
+			unset($fcc);
 
+			if (!empty($code)) {
 				$ext->add('app-pbdirectory', $code, '', new ext_answer());
 				$ext->add('app-pbdirectory', $code, '', new ext_wait(1));
 				$ext->add('app-pbdirectory', $code, '', new ext_goto(1,'pbdirectory'));
-				
-				$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_agi('pbdirectory'));
+			}
+			
+			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_agi('pbdirectory'));
 
-				$ext->addInclude('from-internal-additional', 'app-pbdirectory');
-				
-			break;
+			$ext->addInclude('from-internal-additional', 'app-pbdirectory');
+			
+		break;
         }
 }
 
