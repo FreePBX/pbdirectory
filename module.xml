@@ -4,7 +4,7 @@
 	<version>1.0</version>
 	<type>setup</type>
 	<category>Phonebook</category>
-	<location>release/pbdirectory-0.1.tgz</location>
+	<location>release//2.2/pbdirectory-1.0.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
-	<md5sum>4c34e94ce49061c775e1a03dbd3e9a80</md5sum>
+	<md5sum>f1ded3852ddae6f4b1a480de7f08ff6f</md5sum>
 </module>
