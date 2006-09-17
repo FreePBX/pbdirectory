@@ -20,7 +20,7 @@ function pbdirectory_get_config($engine) {
 			unset($fcc);
 
 			if (!empty($code)) {
-				$ext->add('app-pbdirectory', $code, '', new ext_answer());
+				$ext->add('app-pbdirectory', $code, '', new ext_answer(''));
 				$ext->add('app-pbdirectory', $code, '', new ext_wait(1));
 				$ext->add('app-pbdirectory', $code, '', new ext_goto(1,'pbdirectory'));
 			}
@@ -29,7 +29,7 @@ function pbdirectory_get_config($engine) {
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_gotoif('$["${dialnumber}"=""]','hangup,1'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_noop('Got number to dial: ${dialnumber}'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_dial('Local/${dialnumber}@from-internal/n','',''));
-			$ext->add('app-pbdirectory', 'hangup', '', new ext_hangup());
+			$ext->add('app-pbdirectory', 'hangup', '', new ext_hangup(''));
 			
 			$ext->addInclude('from-internal-additional', 'app-pbdirectory');
 			
