@@ -256,15 +256,19 @@ function do_directory($type, &$directory, $dial_context, $say_exten, $operator) 
 	
 	$escape_digits = "1*";
 	if ($operator) $escape_digits .= "0";
+
+	$agi->stream_file("pbdirectory/welcome-to-phonebook");
 	
 	switch ($type) {
-		case DIR_FIRST: $intro = ($operator ? "dir-intro-fn-oper" : "dir-intro-fn"); break;
-		case DIR_ANY: $intro = ($operator ? "dir-intro-fnln-oper" : "dir-intro-fnln"); break;
-		case DIR_LAST: default: $intro = ($operator ? "dir-intro-oper" : "dir-intro"); break;
+		case DIR_FIRST: $intro = "pbdirectory/first-three-letters-entry"; break;
+		case DIR_ANY: $intro = "pbdirectory/first-three-letters-entry"; break;
 	}
+
+	if (DEBUG) $agi->verbose("start loop");
 	
 	$loop = 0;
 	while ($loop < MAX_REPEAT) {
+		if (DEBUG) $agi->verbose("loop = ".$loop);
 		$r = $agi->get_data($intro, 4000, NUM_DIGITS);
 		
 		if (($r["result"] == "0") && $operator) {
@@ -292,11 +296,12 @@ function do_directory($type, &$directory, $dial_context, $say_exten, $operator) 
 			do {
 				$match = & $directory[$digits][$i];
 				
+				sleep(1);
 				//TODO: check if festival is available, say the name that way
 				$digit = say_alpha($match["name"],$escape_digits);
 				
 				if (!$digit) {
-					$digit = stream_multiple("dir-instr", $escape_digits, 3000);
+					$digit = stream_multiple(array("pbdirectory/if-correct-press","digits/1","pbdirectory/if-incorrect-press","digits/star"), $escape_digits, 3000);
 				}
 				
 				switch ($digit) {
@@ -411,6 +416,7 @@ if (DEBUG) {
 	output($directory);
 }
 
+$agi->verbose('test');
 do_directory($dir_type, $directory, $dial_context, $say_exten, $operator);
 	
 ?>
