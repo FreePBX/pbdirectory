@@ -4,7 +4,7 @@
 	<version>0.3</version>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
-	<location>release/pbdirectory-0.1.tgz</location>
+	<location>release/2.2/pbdirectory-2.2.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<requirements>
@@ -12,7 +12,7 @@
 		<module>phonebook</module>
 		<module>speeddial</module>
 	</requirements>
-	<md5sum>4c34e94ce49061c775e1a03dbd3e9a80</md5sum>
+	<md5sum>bc2a70884c09377ef212dd6e02c32cb7</md5sum>
 	<changelog>
 	</changelog>
 </module>
