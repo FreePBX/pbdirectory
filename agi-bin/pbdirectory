@@ -24,9 +24,6 @@
  * to keep it from getting changed.
  */
 
-//define("AGIBIN_DIR", dirname(__FILE__));
-define("AGIBIN_DIR", '/var/lib/asterisk/agi-bin/');
-
 // set to 1 to say "zed" instead of "zee"
 define("SAY_ZED",0);
 
@@ -55,7 +52,20 @@ define("D_9",57);
 define("D_POUND",35);
 define("D_STAR",42);
 
-include(AGIBIN_DIR."/phpagi.php");
+include("phpagi.php");
+
+function get_var( $agi, $value)
+{
+	$r = $agi->get_variable( $value );
+	
+	if ($r['result'] == 1)
+	{
+		$result = $r['data'];
+		return $result;
+	}
+	else
+		return '';
+}
 
 function output(&$var) {
 	if (DEBUG) {
@@ -71,36 +81,10 @@ function output(&$var) {
 	}
 }
 
-function parse_amportal_conf($filename) {
-	$file = file($filename);
-	if (is_array($file)) {
-		foreach ($file as $line) {
-			if (preg_match("/^\s*([a-zA-Z0-9]+)=([a-zA-Z0-9 .&-@=_<>\"\']+)\s*$/",$line,$matches)) {
-				$conf[ $matches[1] ] = $matches[2];
-			}
-		}
-	} else {
-		die("<h1>Missing or unreadable config file ($filename)...cannot continue</h1>");
-	}
-	
-	if ( !isset($conf["AMPDBENGINE"]) || ($conf["AMPDBENGINE"] == ""))
-	{
-		$conf["AMPDBENGINE"] = "mysql";
-	}
-
-/*			
-	if (($amp_conf["AMPDBENGINE"] == "sqlite") && (!isset($amp_conf["AMPDBENGINE"])))
-		$amp_conf["AMPDBFILE"] = "/var/lib/freepbx/freepbx.sqlite";
-*/
-	
-	return $conf;
-}
-
 function phonebook_list() {
-	global $amp_conf;
 
 	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+	if ($res = $astman->connect("127.0.0.1", $ampmgruser , $ampmgrpass)) {
 		$list = $astman->database_show();
 		foreach ($list as $k => $v)	{
 			if (substr($k, 1, 7) == 'cidname')
@@ -112,7 +96,7 @@ function phonebook_list() {
 
 		return $numbers;
 	} else {
-		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+		fatal("Cannot connect to Asterisk Manager with ".$ampmgruser."/".$ampmgrpass);
 	}
 
 }
@@ -371,8 +355,10 @@ function do_directory($type, &$directory, $dial_context, $say_exten, $operator) 
 /******************************************************************************/
 $agi = new AGI;
 
+$ampmgruser  = get_var( $AGI, "AMPMGRUSER" );
+$ampmgrpass  = get_var( $AGI, "AMPMGRPASS" );
+
 if (DEBUG) $logfile = fopen("/tmp/pbdirectory.log","w");
-$amp_conf = parse_amportal_conf('/etc/amportal.conf');
 
 $phonebook = phonebook_list();
 
