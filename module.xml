@@ -1,13 +1,13 @@
 <module>
 	<rawname>pbdirectory</rawname>
 	<name>Phonebook Directory</name>
-	<version>0.3.1</version>
+	<version>0.3.1.1</version>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
 	<location>release/2.3/pbdirectory-0.3.1.tgz</location>
-	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<changelog>
+		*0.3.1.1* bump for rc1
 		*0.3.1* fixed some hard coded paths, requires core modules:  2.3.0beta1.6 or above
 		*0.3* First changelog entry
 	</changelog>
