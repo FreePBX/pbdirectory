@@ -4,7 +4,7 @@
 	<version>0.3.1.2</version>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
-	<location>release/2.3/pbdirectory-0.3.1.1.tgz</location>
+	<location>release/2.3/pbdirectory-0.3.1.2.tgz</location>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<changelog>
 		*0.3.1.2* #2343 pbdirectory script errors
@@ -17,7 +17,7 @@
 		<module>phonebook</module>
 		<module>speeddial</module>
 	</requirements>
-	<md5sum>d70ab36e00a149c50fa55eed83679e31</md5sum>
+	<md5sum>c40f7a1208403bac111fa17ccc0f20a5</md5sum>
 	<changelog>
 	</changelog>
 </module>
