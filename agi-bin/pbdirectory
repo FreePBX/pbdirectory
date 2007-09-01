@@ -20,7 +20,7 @@
 /* --------WARNING---------
  * 
  * This script is auto-copied from an included module and will get overwritten.
- * If you modify it, you must change it to write only, in the agi-bin directory,
+ * If you modify it, you must change it to read only, in the agi-bin directory,
  * to keep it from getting changed.
  */
 
@@ -83,12 +83,15 @@ function output(&$var) {
 
 function phonebook_list() {
 
+	global $ampmgruser, $ampmgrpass;
+
+	$numbers = array();
 	$astman = new AGI_AsteriskManager();
 	if ($res = $astman->connect("127.0.0.1", $ampmgruser , $ampmgrpass)) {
 		$list = $astman->database_show();
 		foreach ($list as $k => $v)	{
 			if (substr($k, 1, 7) == 'cidname')
-			$numbers[substr($k, 9)] = $v ;
+				$numbers[substr($k, 9)] = $v ;
 		}
 
 		if (is_array($numbers))
@@ -240,7 +243,7 @@ function say_alpha($string,$escape_digits) {
 	return stream_multiple($files,$escape_digits);
 }
 
-function do_directory($type, &$directory, $dial_context, $say_exten, $operator) {
+function do_directory($type, &$directory, $say_exten, $operator) {
 	global $agi;
 
 	$agi->conlog('starting directory');
@@ -355,8 +358,8 @@ function do_directory($type, &$directory, $dial_context, $say_exten, $operator) 
 /******************************************************************************/
 $agi = new AGI;
 
-$ampmgruser  = get_var( $AGI, "AMPMGRUSER" );
-$ampmgrpass  = get_var( $AGI, "AMPMGRPASS" );
+$ampmgruser  = get_var( $agi, "AMPMGRUSER" );
+$ampmgrpass  = get_var( $agi, "AMPMGRPASS" );
 
 if (DEBUG) $logfile = fopen("/tmp/pbdirectory.log","w");
 
@@ -410,6 +413,6 @@ if (DEBUG) {
 }
 
 $agi->verbose('test');
-do_directory($dir_type, $directory, $dial_context, $say_exten, $operator);
+do_directory($dir_type, $directory, $say_exten, $operator);
 	
 ?>
