@@ -8,6 +8,19 @@ function pbdirectory_destinations() {
 	return $extens;
 }
 
+function pbdirectory_getdestinfo($dest) {
+	global $active_modules;
+
+	if (trim($dest) == 'app-pbdirectory,pbdirectory,1') {
+		//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+		return array('description' => 'Phonebook Directory',
+		             'edit_url' => false,
+							  );
+	} else {
+		return false;
+	}
+}
+
 function pbdirectory_get_config($engine) {
         $modulename = 'pbdirectory';
 
