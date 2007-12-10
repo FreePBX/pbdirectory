@@ -38,6 +38,7 @@ function pbdirectory_get_config($engine) {
 				$ext->add('app-pbdirectory', $code, '', new ext_goto(1,'pbdirectory'));
 			}
 			
+			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_macro('user-callerid'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_agi('pbdirectory'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_gotoif('$["${dialnumber}"=""]','hangup,1'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_noop('Got number to dial: ${dialnumber}'));
