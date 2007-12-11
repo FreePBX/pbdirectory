@@ -1,12 +1,13 @@
 <module>
 	<rawname>pbdirectory</rawname>
 	<name>Phonebook Directory</name>
-	<version>0.3.1.2</version>
+	<version>2.4.0</version>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
-	<location>release/2.3/pbdirectory-0.3.1.2.tgz</location>
+	<location>release/2.4/pbdirectory-2.4.0.tgz</location>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<changelog>
+		*2.4.0* Destination registry, added missing macro-user-callerid call
 		*0.3.1.2* #2343 pbdirectory script errors
 		*0.3.1.1* bump for rc1
 		*0.3.1* fixed some hard coded paths, requires core modules:  2.3.0beta1.6 or above
@@ -17,7 +18,7 @@
 		<module>phonebook</module>
 		<module>speeddial</module>
 	</requirements>
-	<md5sum>c40f7a1208403bac111fa17ccc0f20a5</md5sum>
+	<md5sum>188d03c077e1e9749df4e426fd513568</md5sum>
 	<changelog>
 	</changelog>
 </module>
