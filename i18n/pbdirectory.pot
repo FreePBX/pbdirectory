@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:18+0200\n"
+"POT-Creation-Date: 2008-10-06 12:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: install.php:4
-msgid "Phonebook dial-by-name directory"
+#: functions.inc.php:16
+msgid "Phonebook Directory"
 msgstr ""
 
-#: module.xml
-msgid "Phonebook Directory"
+#: install.php:4
+msgid "Phonebook dial-by-name directory"
 msgstr ""
