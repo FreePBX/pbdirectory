@@ -13,7 +13,7 @@ function pbdirectory_getdestinfo($dest) {
 
 	if (trim($dest) == 'app-pbdirectory,pbdirectory,1') {
 		//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-		return array('description' => 'Phonebook Directory',
+		return array('description' => _("Phonebook Directory"),
 		             'edit_url' => false,
 							  );
 	} else {

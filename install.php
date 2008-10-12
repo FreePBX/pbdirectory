@@ -1,7 +1,6 @@
 <?php
 //for translation only
 if (false) {
-_("Phonebook Directory");
 _("Phonebook dial-by-name directory");
 }
 
