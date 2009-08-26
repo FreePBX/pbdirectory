@@ -90,8 +90,11 @@ function phonebook_list() {
 	if ($res = $astman->connect("127.0.0.1", $ampmgruser , $ampmgrpass)) {
 		$list = $astman->database_show();
 		foreach ($list as $k => $v)	{
-			if (substr($k, 1, 7) == 'cidname')
-				$numbers[substr($k, 9)] = $v ;
+			if (strstr($k, 'cidname')) {
+				$split = explode("/",$k);
+				$ext = $split[2];
+				$numbers[$ext] = $v;
+			} 
 		}
 
 		if (is_array($numbers))
