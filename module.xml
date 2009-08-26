@@ -6,7 +6,7 @@
 	<license>GPLv2+</license>
 	<type>tool</type>
 	<category>CID &amp; Number Management</category>
-	<location>release/2.6/pbdirectory-2.6.0.0.tgz</location>
+	<location>release/2.6/pbdirectory-2.6.0.1.tgz</location>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<changelog>
 		*2.6.0.1* #3468
@@ -27,5 +27,5 @@
 		<module>phonebook</module>
 		<module>speeddial</module>
 	</requirements>
-	<md5sum>afe2f864f26143b0554cc850e96bae65</md5sum>
+	<md5sum>37a5ea630885c742ecdeed4bb1fefa7c</md5sum>
 </module>
