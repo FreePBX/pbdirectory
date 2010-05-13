@@ -33,11 +33,11 @@ function pbdirectory_get_config($engine) {
 			unset($fcc);
 
 			if (!empty($code)) {
-				$ext->add('app-pbdirectory', $code, '', new ext_answer());
-				$ext->add('app-pbdirectory', $code, '', new ext_wait(1));
 				$ext->add('app-pbdirectory', $code, '', new ext_goto(1,'pbdirectory'));
 			}
 			
+			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_answer());
+			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_wait(1));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_macro('user-callerid'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_agi('pbdirectory'));
 			$ext->add('app-pbdirectory', 'pbdirectory', '', new ext_gotoif('$["${dialnumber}"=""]','hangup,1'));
