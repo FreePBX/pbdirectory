@@ -8,6 +8,7 @@ _("Phonebook dial-by-name directory");
 $fcc = new featurecode('pbdirectory', 'app-pbdirectory');
 $fcc->setDescription('Phonebook dial-by-name directory');
 $fcc->setDefault('411');
+$fcc->setProvideDest();
 $fcc->update();
 unset($fcc);
 
