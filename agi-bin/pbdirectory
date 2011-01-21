@@ -254,11 +254,11 @@ function do_directory($type, &$directory, $say_exten, $operator) {
 	$escape_digits = "1*";
 	if ($operator) $escape_digits .= "0";
 
-	$agi->stream_file("pbdirectory/welcome-to-phonebook");
+	$agi->stream_file("pbdirectory-welcome-to-phonebook");
 	
 	switch ($type) {
-		case DIR_FIRST: $intro = "pbdirectory/first-three-letters-entry"; break;
-		case DIR_ANY: $intro = "pbdirectory/first-three-letters-entry"; break;
+		case DIR_FIRST: $intro = "pbdirectory-first-three-letters-entry"; break;
+		case DIR_ANY: $intro = "pbdirectory-first-three-letters-entry"; break;
 	}
 
 	if (DEBUG) $agi->verbose("start loop");
@@ -298,7 +298,7 @@ function do_directory($type, &$directory, $say_exten, $operator) {
 				$digit = say_alpha($match["name"],$escape_digits);
 				
 				if (!$digit) {
-					$digit = stream_multiple(array("pbdirectory/if-correct-press","digits/1","pbdirectory/if-incorrect-press","digits/star"), $escape_digits, 3000);
+					$digit = stream_multiple(array("pbdirectory-if-correct-press","digits/1","pbdirectory-if-incorrect-press","digits/star"), $escape_digits, 3000);
 				}
 				
 				switch ($digit) {
