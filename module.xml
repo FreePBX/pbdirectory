@@ -5,26 +5,13 @@
 	<version>2.9.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<type>tool</type>
-	<category>CID &amp; Number Management</category>
+	<category>Admin</category>
 	<location>release/2.9/pbdirectory-2.9.0.2.tgz</location>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<changelog>
 		*2.9.0.2* #4934
 		*2.9.0.1* moved sound files out of subdir and renamed
 		*2.9.0.0* #4653
-		*2.7.0.1* #4237
-		*2.7.0.0* localizations
-		*2.6.0.1* #3468
-		*2.6.0.0* localizations, misc
-		*2.5.0* localization string enclosures
-		*2.4.0.2* removed 2.4.0 requirement possible causing broken module issue
-		*2.4.0.1* added depends on 2.4.0
-		*2.4.0* Destination registry, added missing macro-user-callerid call
-		*0.3.1.2* #2343 pbdirectory script errors
-		*0.3.1.1* bump for rc1
-		*0.3.1* fixed some hard coded paths, requires core modules:  2.3.0beta1.6 or above
-		*0.3* First changelog entry
 	</changelog>
 	<depends>
 		<version>2.4.0</version>
