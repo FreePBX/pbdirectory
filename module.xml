@@ -6,7 +6,7 @@
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Admin</category>
-	<location>release/2.10/pbdirectory-2.10.0.0.tgz</location>
+	<location>release/2.10/pbdirectory-2.10.0.1.tgz</location>
 	<description>Provides a dial-by-name directory for phonebook entries</description>
 	<changelog>
 		*2.10.0.1* #5478 
@@ -22,5 +22,5 @@
 		<module>phonebook</module>
 		<module>speeddial</module>
 	</requirements>
-	<md5sum>f9be93d4b6e2c6571d144d5582b96f94</md5sum>
+	<md5sum>24ad4120fc3b6a7d5107f6e4d6272159</md5sum>
 </module>
