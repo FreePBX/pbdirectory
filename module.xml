@@ -23,4 +23,4 @@
 		<module>speeddial</module>
 	</requirements>
 	<md5sum>24ad4120fc3b6a7d5107f6e4d6272159</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
