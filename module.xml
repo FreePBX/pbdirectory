@@ -1,14 +1,14 @@
 <module>
-	<rawname>pbdirectory</rawname>
-	<repo>extended</repo>
-	<name>Phonebook Directory</name>
-	<version>2.11.0.0</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
-	<category>Admin</category>
-	<location>release/2.11/pbdirectory-2.11.0.0.tgz</location>
-	<description>Provides a dial-by-name directory for phonebook entries</description>
-	<changelog>
+  <rawname>pbdirectory</rawname>
+  <repo>extended</repo>
+  <name>Phonebook Directory</name>
+  <version>2.11.0.0</version>
+  <publisher>FreePBX</publisher>
+  <license>GPLv2+</license>
+  <category>Admin</category>
+  <location>release/2.11/pbdirectory-2.11.0.0.tgz</location>
+  <description>Provides a dial-by-name directory for phonebook entries</description>
+  <changelog>
 		*2.11.0.0* bump version
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
@@ -16,12 +16,15 @@
 		*2.9.0.1* moved sound files out of subdir and renamed
 		*2.9.0.0* #4653
 	</changelog>
-	<depends>
-		<version>2.4.0</version>
-	</depends>
-	<requirements>
-		<module>phonebook</module>
-		<module>speeddial</module>
-	</requirements>
-	<md5sum>fdd65968e753840a60086c4a9cf4836f</md5sum>
+  <depends>
+    <version>2.4.0</version>
+  </depends>
+  <requirements>
+    <module>phonebook</module>
+    <module>speeddial</module>
+  </requirements>
+  <md5sum>fdd65968e753840a60086c4a9cf4836f</md5sum>
+  <supported>
+    <version>2.10</version>
+  </supported>
 </module>
