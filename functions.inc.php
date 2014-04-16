@@ -1,7 +1,9 @@
 <?php
  /* $Id:$ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+//	Copyright 2013 Schmooze Com Inc.
+//
 // returns a associative arrays with keys 'destination' and 'description'
 function pbdirectory_destinations() {
 	// return an associative array with destination and description

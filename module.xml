@@ -2,13 +2,15 @@
   <rawname>pbdirectory</rawname>
   <repo>extended</repo>
   <name>Phonebook Directory</name>
-  <version>2.11.0.0</version>
-  <publisher>FreePBX</publisher>
-  <license>GPLv2+</license>
+  <version>2.11.0.1</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <category>Admin</category>
   <location>release/2.11/pbdirectory-2.11.0.0.tgz</location>
   <description>Provides a dial-by-name directory for phonebook entries</description>
   <changelog>
+  		*2.11.0.1* Include license file
 		*2.11.0.0* bump version
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
