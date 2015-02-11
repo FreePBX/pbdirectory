@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:04-0500\n"
 "PO-Revision-Date: 2009-04-20 10:23+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,14 +28,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: /usr/src/freepbx/pbdirectory/functions.inc.php:19
 msgid "Phonebook Directory"
 msgstr "Annuaire Téléphonique"
 
+#: /usr/src/freepbx/pbdirectory/install.php:5
 msgid "Phonebook dial-by-name directory"
 msgstr "Annuaire Téléphonique numéroter-par-nom"
-
-msgid "Admin"
-msgstr ""
-
-msgid "Provides a dial-by-name directory for phonebook entries"
-msgstr ""

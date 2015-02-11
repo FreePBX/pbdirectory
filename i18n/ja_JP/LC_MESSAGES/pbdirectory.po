@@ -2,7 +2,7 @@
 # ================================
 # Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
 # Inquiries: info@qloog.com / www.qloog.com
-# 
+#
 # This translation is a culmination of the hard work of
 # several outstanding individuals, which started in 2009 with the 
 # first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
@@ -14,7 +14,7 @@
 # of course, released under the same GPLv2 license as FreePBX. 
 # We only ask that you kindly retain these credits in honor of 
 # the time and effort that all of us have contributed. Enjoy!
-# 
+#
 # This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
@@ -37,24 +37,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-05 19:32+0900\n"
+"POT-Creation-Date: 2015-02-11 18:04-0500\n"
 "PO-Revision-Date: 2013-11-07 13:17+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: Japanese\n"
 "X-Generator: Poedit 1.5.7\n"
 
-msgid "Phonebook dial-by-name directory"
-msgstr "名前からダイヤル　電話帳ディレクトリ"
-
+#: /usr/src/freepbx/pbdirectory/functions.inc.php:19
 msgid "Phonebook Directory"
 msgstr "電話帳ディレクトリ"
 
-msgid "Admin"
-msgstr "アドミン"
+#: /usr/src/freepbx/pbdirectory/install.php:5
+msgid "Phonebook dial-by-name directory"
+msgstr "名前からダイヤル　電話帳ディレクトリ"
 
-msgid "Provides a dial-by-name directory for phonebook entries"
-msgstr "電話帳エントリに対して名前からダイヤルするディレクトリを提供します。"
+#~ msgid "Admin"
+#~ msgstr "アドミン"
+
+#~ msgid "Provides a dial-by-name directory for phonebook entries"
+#~ msgstr ""
+#~ "電話帳エントリに対して名前からダイヤルするディレクトリを提供します。"
