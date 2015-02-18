@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:04-0500\n"
+"POT-Creation-Date: 2015-02-18 18:36-0500\n"
 "PO-Revision-Date: 2013-11-07 13:17+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,17 +47,18 @@ msgstr ""
 "Language: Japanese\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: /usr/src/freepbx/pbdirectory/functions.inc.php:19
+#: pbdirectory.i18n.php:4
+msgid "Admin"
+msgstr "アドミン"
+
+#: functions.inc.php:19 pbdirectory.i18n.php:3
 msgid "Phonebook Directory"
 msgstr "電話帳ディレクトリ"
 
-#: /usr/src/freepbx/pbdirectory/install.php:5
+#: install.php:5
 msgid "Phonebook dial-by-name directory"
 msgstr "名前からダイヤル　電話帳ディレクトリ"
 
-#~ msgid "Admin"
-#~ msgstr "アドミン"
-
-#~ msgid "Provides a dial-by-name directory for phonebook entries"
-#~ msgstr ""
-#~ "電話帳エントリに対して名前からダイヤルするディレクトリを提供します。"
+#: pbdirectory.i18n.php:5
+msgid "Provides a dial-by-name directory for phonebook entries"
+msgstr "電話帳エントリに対して名前からダイヤルするディレクトリを提供します。"
