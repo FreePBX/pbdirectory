@@ -2,14 +2,15 @@
   <rawname>pbdirectory</rawname>
   <repo>extended</repo>
   <name>Phonebook Directory</name>
-  <version>2.11.0.2</version>
-	<publisher>Schmooze Com Inc</publisher>
+  <version>2.11.0.3</version>
+	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <category>Admin</category>
   <location>release/2.11/pbdirectory-2.11.0.0.tgz</location>
   <description>Provides a dial-by-name directory for phonebook entries</description>
-  <changelog>
+	<changelog>
+		*2.11.0.3* Localize sound prompts
     *2.11.0.2* Fix depends
 		*2.11.0.1* Include license file
 		*2.11.0.0* bump version

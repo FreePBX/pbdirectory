@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-18 18:36-0500\n"
+"POT-Creation-Date: 2015-08-14 15:05-0700\n"
 "PO-Revision-Date: 2014-07-22 12:13+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -22,11 +22,7 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: pbdirectory.i18n.php:4
-msgid "Admin"
-msgstr "Админ"
-
-#: functions.inc.php:19 pbdirectory.i18n.php:3
+#: functions.inc.php:19
 msgid "Phonebook Directory"
 msgstr "Телефонен Справочник"
 
@@ -34,6 +30,8 @@ msgstr "Телефонен Справочник"
 msgid "Phonebook dial-by-name directory"
 msgstr "Избиране-По-Име от Телефонен Справочник"
 
-#: pbdirectory.i18n.php:5
-msgid "Provides a dial-by-name directory for phonebook entries"
-msgstr "Предоставя избиране-по-име от телефонен указател"
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid "Provides a dial-by-name directory for phonebook entries"
+#~ msgstr "Предоставя избиране-по-име от телефонен указател"
