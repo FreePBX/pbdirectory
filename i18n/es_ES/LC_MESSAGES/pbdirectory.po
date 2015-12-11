@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo pbdirectory module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-14 15:05-0700\n"
+"POT-Creation-Date: 2015-12-10 16:38-0800\n"
 "PO-Revision-Date: 2015-03-23 22:50+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -17,7 +17,11 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:19
+#: pbdirectory.i18n.php:6
+msgid "Admin"
+msgstr "Administrador"
+
+#: functions.inc.php:19 pbdirectory.i18n.php:4
 msgid "Phonebook Directory"
 msgstr "Directorio Telefónico"
 
@@ -25,8 +29,6 @@ msgstr "Directorio Telefónico"
 msgid "Phonebook dial-by-name directory"
 msgstr "Directorio discado-por-nombre"
 
-#~ msgid "Admin"
-#~ msgstr "Administrador"
-
-#~ msgid "Provides a dial-by-name directory for phonebook entries"
-#~ msgstr "Provee un directorio discado-por-nombre para el listín"
+#: pbdirectory.i18n.php:8
+msgid "Provides a dial-by-name directory for phonebook entries"
+msgstr "Provee un directorio discado-por-nombre para el listín"

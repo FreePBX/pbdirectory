@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-14 15:05-0700\n"
+"POT-Creation-Date: 2015-12-10 16:38-0800\n"
 "PO-Revision-Date: 2008-10-19 20:27+0100\n"
 "Last-Translator: Alexander Kozyrev\n"
 "Language-Team: Russian\n"
@@ -15,7 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:19
+#: pbdirectory.i18n.php:6
+msgid "Admin"
+msgstr "Админ"
+
+#: functions.inc.php:19 pbdirectory.i18n.php:4
 msgid "Phonebook Directory"
 msgstr "Телефонная книга"
 
@@ -23,9 +27,6 @@ msgstr "Телефонная книга"
 msgid "Phonebook dial-by-name directory"
 msgstr "Телефонная книга по имени"
 
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
-#~ msgid "Provides a dial-by-name directory for phonebook entries"
-#~ msgstr ""
-#~ "Предоставляет каталог набора-по-имени для записей в телефонной книге"
+#: pbdirectory.i18n.php:8
+msgid "Provides a dial-by-name directory for phonebook entries"
+msgstr "Предоставляет каталог набора-по-имени для записей в телефонной книге"
