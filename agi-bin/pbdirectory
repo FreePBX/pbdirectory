@@ -69,29 +69,23 @@ function output(&$var) {
 }
 
 function phonebook_list() {
-
-	global $ampmgruser, $ampmgrpass;
-
 	$numbers = array();
-	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $ampmgruser , $ampmgrpass)) {
-		$list = $astman->database_show();
-		foreach ($list as $k => $v)	{
-			if (strstr($k, 'cidname')) {
-				$split = explode("/",$k);
-				$ext = $split[2];
-				$numbers[$ext] = $v;
-			} 
+	$command = "asterisk -rx'database show cidname'";
+	exec($command,$list);
+	foreach($list as $line){
+		$entry = explode(":",$line);
+		$family = trim($entry[0]);
+		$value = trim($entry[1]);
+		if (strstr($family, 'cidname')) {
+			$split = explode("/",$family);
+			$ext = $split[2];
+			$numbers[$ext] = $value;
 		}
-
-		if (is_array($numbers))
-			natcasesort($numbers);
-
-		return $numbers;
-	} else {
-		fatal("Cannot connect to Asterisk Manager with ".$ampmgruser."/".$ampmgrpass);
 	}
+	if (is_array($numbers))
+		natcasesort($numbers);
 
+	return $numbers;
 }
 
 /** Play a bunch of files, optionally accepting input and looping
