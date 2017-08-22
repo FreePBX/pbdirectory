@@ -38,6 +38,7 @@ define("D_8",56);
 define("D_9",57);
 define("D_POUND",35);
 define("D_STAR",42);
+include('/etc/freepbx.conf');
 
 include("phpagi.php");
 
@@ -68,29 +69,22 @@ function output(&$var) {
 	}
 }
 
-function phonebook_list() {
-
-	global $ampmgruser, $ampmgrpass;
-
+function phonebook_list_all() {
+	//FREEPBX-15370 Phonebook dial-by-name directory feature code broken.
 	$numbers = array();
-	$astman = new AGI_AsteriskManager();
-	if ($res = $astman->connect("127.0.0.1", $ampmgruser , $ampmgrpass)) {
-		$list = $astman->database_show();
+	$list = FreePBX::create()->astman->database_show();
 		foreach ($list as $k => $v)	{
 			if (strstr($k, 'cidname')) {
 				$split = explode("/",$k);
 				$ext = $split[2];
 				$numbers[$ext] = $v;
-			} 
+			}
 		}
 
 		if (is_array($numbers))
 			natcasesort($numbers);
 
 		return $numbers;
-	} else {
-		fatal("Cannot connect to Asterisk Manager with ".$ampmgruser."/".$ampmgrpass);
-	}
 
 }
 
@@ -353,7 +347,7 @@ $ampmgrpass  = get_var( $agi, "AMPMGRPASS" );
 
 if (DEBUG) $logfile = fopen("/tmp/pbdirectory.log","w");
 
-$phonebook = phonebook_list();
+$phonebook = phonebook_list_all();
 
 $operator = false;
 $dir_type = DIR_FIRST;
