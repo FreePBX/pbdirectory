@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-13 19:55-0700\n"
+"POT-Creation-Date: 2017-08-22 19:08-0400\n"
 "PO-Revision-Date: 2016-03-15 22:53+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr "مدیر"
 msgid "Phonebook Directory"
 msgstr "دایرکتوری دفترچه تلفن"
 
-#: install.php:5
+#: install.php:5 pbdirectory.i18n.php:10
 msgid "Phonebook dial-by-name directory"
 msgstr "دایرکتوری دفترچه تلفن شماره گیری با نام"
 

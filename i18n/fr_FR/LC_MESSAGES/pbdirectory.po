@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-10 16:38-0800\n"
+"POT-Creation-Date: 2017-08-22 19:08-0400\n"
 "PO-Revision-Date: 2009-04-20 10:23+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Phonebook Directory"
 msgstr "Annuaire Téléphonique"
 
-#: install.php:5
+#: install.php:5 pbdirectory.i18n.php:10
 msgid "Phonebook dial-by-name directory"
 msgstr "Annuaire Téléphonique numéroter-par-nom"
 
