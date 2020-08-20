@@ -9,6 +9,7 @@
   <category>Admin</category>
   <location>release/2.11/pbdirectory-2.11.0.0.tgz</location>
   <description>Provides a dial-by-name directory for phonebook entries</description>
+  <more-info>https://wiki.freepbx.org/display/FPG/Feature+Code+Descriptions#FeatureCodeDescriptions-PhonebookDirectory</more-info>
 	<changelog>
 		*2.11.0.6* FREEPBX-15370 Phonebook dial-by-name directory feature code broken
 		*2.11.0.5* Add sound languages: it,fr,en_GB
