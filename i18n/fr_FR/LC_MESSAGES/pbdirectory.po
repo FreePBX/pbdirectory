@@ -15,22 +15,25 @@
 #
 # Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-22 19:08-0400\n"
-"PO-Revision-Date: 2009-04-20 10:23+0100\n"
-"Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
-"Language-Team: Français <LL@li.org>\n"
+"PO-Revision-Date: 2021-09-22 06:55+0000\n"
+"Last-Translator: jeremie cattan <freepbx@famillecattan.com>\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
+"pbdirectory/fr/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: pbdirectory.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: functions.inc.php:19 pbdirectory.i18n.php:4
 msgid "Phonebook Directory"
@@ -43,3 +46,4 @@ msgstr "Annuaire Téléphonique numéroter-par-nom"
 #: pbdirectory.i18n.php:8
 msgid "Provides a dial-by-name directory for phonebook entries"
 msgstr ""
+"Fournit un répertoire de numérotation par nom pour les entrées du répertoire"
