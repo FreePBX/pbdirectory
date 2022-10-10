@@ -2,35 +2,23 @@
   <rawname>pbdirectory</rawname>
   <repo>extended</repo>
   <name>Phonebook Directory</name>
-  <version>2.11.0.6</version>
+  <version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <category>Admin</category>
-  <location>release/2.11/pbdirectory-2.11.0.0.tgz</location>
   <description>Provides a dial-by-name directory for phonebook entries</description>
   <more-info>https://wiki.freepbx.org/display/FPG/Feature+Code+Descriptions#FeatureCodeDescriptions-PhonebookDirectory</more-info>
 	<changelog>
-		*2.11.0.6* FREEPBX-15370 Phonebook dial-by-name directory feature code broken
-		*2.11.0.5* Add sound languages: it,fr,en_GB
-		*2.11.0.4* FREEPBX-9951 Japanese language prompts
-		*2.11.0.3* Localize sound prompts
-    *2.11.0.2* Fix depends
-		*2.11.0.1* Include license file
-		*2.11.0.0* bump version
-		*2.10.0.1* #5478
-		*2.10.0.0* new version changes
-		*2.9.0.2* #4934
-		*2.9.0.1* moved sound files out of subdir and renamed
-		*2.9.0.0* #4653
+      	*17.0.1 * Version 17.0.1
 	</changelog>
   <depends>
-    <version>2.4.0</version>
+    <version>17.0.1</version>
     <module>phonebook</module>
     <module>speeddial</module>
   </depends>
   <md5sum>fdd65968e753840a60086c4a9cf4836f</md5sum>
   <supported>
-    <version>2.10</version>
+    <version>17.0</version>
   </supported>
 </module>
