@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-22 19:08-0400\n"
-"PO-Revision-Date: 2023-11-18 14:01+0000\n"
+"PO-Revision-Date: 2023-11-19 10:09+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "pbdirectory/pl/>\n"
@@ -29,13 +29,13 @@ msgstr "Administrator"
 #: functions.inc.php:19
 #: pbdirectory.i18n.php:4
 msgid "Phonebook Directory"
-msgstr ""
+msgstr "Książka telefoniczna"
 
 #: install.php:5
 #: pbdirectory.i18n.php:10
 msgid "Phonebook dial-by-name directory"
-msgstr ""
+msgstr "Wybierz według nazwy z książki telefonicznej"
 
 #: pbdirectory.i18n.php:8
 msgid "Provides a dial-by-name directory for phonebook entries"
-msgstr ""
+msgstr "Udostępnia wybieranie po nazwie z wpisów książki telefonicznej"
